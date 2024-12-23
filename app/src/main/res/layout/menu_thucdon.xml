@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/gradient_background"
+    android:elevation="6dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:radius="8dp">
+
+    <!-- Tên thực đơn -->
+    <TextView
+        android:id="@+id/tvTenThucDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+
+        android:padding="12dp"
+        android:text="Tên thực đơn"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Danh sách món ăn -->
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rvDanhSachMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:nestedScrollingEnabled="false" />
+
+    <!-- Tổng calo -->
+    <TextView
+        android:id="@+id/tvTotalCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:padding="12dp"
+        android:text="Tổng calo: 0"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+</LinearLayout>

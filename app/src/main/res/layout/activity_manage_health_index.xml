@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_2"
+    android:fitsSystemWindows="true">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/thongtin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#3C3E3E"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/tennguoidung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên user"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+        </TextView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_home_24"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="325dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/home"
+            >
+
+        </ImageView>
+        <ImageView
+            android:src="@drawable/baseline_logout_24"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="365dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/logout">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/thongtin"
+        android:layout_marginTop="70dp"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginStart="10dp"
+                android:text="Ngày cập nhật" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <EditText
+                android:id="@+id/txtngaydo"
+                android:layout_width="320dp"
+                android:layout_marginEnd="3dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:layout_marginStart="30dp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/calngaydo"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_calendar_month_24"
+                >
+            </ImageView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginStart="10dp"
+                android:text="Cân nặng" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <EditText
+                android:id="@+id/txtcannang"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:backgroundTint="@color/white"
+                android:inputType="text"
+                android:layout_marginStart="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginStart="10dp"
+                android:text="Chiều cao" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <EditText
+                android:id="@+id/txtchieucao"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:backgroundTint="@color/white"
+                android:inputType="number"
+                android:layout_marginStart="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/btncapnhat"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật"
+                android:backgroundTint="#43A047"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/btnxoa"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Xóa"
+                android:backgroundTint="#43A047"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </TableRow>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Thêm gradient cho background -->
+    <gradient
+        android:startColor="@android:color/holo_blue_light"
+        android:endColor="@android:color/holo_blue_dark"
+        android:angle="45"/>
+
+    <!-- Đường viền -->
+    <stroke
+        android:color="@android:color/white"
+        android:width="2dp"/>
+
+    <!-- Bo góc -->
+    <corners android:radius="8dp"/>
+</shape>

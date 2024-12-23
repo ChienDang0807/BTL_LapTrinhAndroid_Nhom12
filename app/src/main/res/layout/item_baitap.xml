@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    cardview:cardCornerRadius="8dp"
+    cardview:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+
+        <TextView
+            android:id="@+id/tvTenBaiTap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên bài tập"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tvThoiGianTap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thời gian tập"
+            android:textSize="14sp"
+            android:textColor="#888888" />
+
+
+        <TextView
+            android:id="@+id/tvMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả bài tập"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:paddingTop="8dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
